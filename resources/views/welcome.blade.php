@@ -20,6 +20,19 @@
             </div>
         </div>
     </header>
+    <section class="highlight-phone">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="intro">
+                        <h2>Easy Car Care</h2>
+                        <p>Apex Is Eager To Deliver Its Service In This Line Of Expertise To Help You Service And Maintain Your Fleets With A One-Stop Service By Coming To You And Cutting Of The Stress Of Spending Precious Time At The Bay For Servicing.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-2"></div>
+            </div>
+        </div>
+    </section>
     <section class="highlight-clean" style="background: var(--gray-dark);">
         <div class="container">
             <div class="intro">
@@ -36,6 +49,13 @@
         </div>
     </section>
 
+    <div class="brands"><a href="#"> <img src="{{ asset('img/Nissan-logo.svg.png')}}" width="100px">
+        <img src="{{ asset('img/03e1b0207489ad32d10b9a860ffc6623.png')}}" width="100px">
+        <img src="{{ asset('img/2048px-BMW.svg.png')}}" width="100px">
+        <img src="{{ asset('img/Kia-Logo.png')}}" width="120px">
+        <img src="{{ asset('img/Ford_logo_flat.svg.png')}}" width="150px">
+        <img src="{{ asset('img/2216144.png')}}" width="150px"></a>
+    </div>
 
     <section class="highlight-clean">
         <div class="container"style="padding:10px">
@@ -89,5 +109,7 @@
             
         </div>
     </section>
+
+    
 
 @endsection

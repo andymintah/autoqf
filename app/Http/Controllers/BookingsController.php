@@ -25,6 +25,7 @@ class BookingsController extends Controller
         $services = Service::all();
 
         return view ('bookings.create', ['services'=>$services]);
+        
 
     }
 

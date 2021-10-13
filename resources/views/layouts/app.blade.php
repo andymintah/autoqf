@@ -11,7 +11,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/multistep.js') }}" defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -22,8 +21,13 @@
     <link rel="stylesheet" href="{{ asset('fonts/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Footer-Basic.css')}}">
     <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Brands.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Highlight-Phone.css')}}">
+
     <link rel="stylesheet" href="{{ asset('css/Header-Blue.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Highlight-Clean.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Multi-step-form.css')}}">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/Navigation-with-Search.css')}}">
@@ -42,9 +46,8 @@
               
         <!--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">-->
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-            <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('img/apexlogo.jpg')}}" width="150px" height="100px">
+                    ApexAutoFix
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -55,12 +58,11 @@
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
                             <li class="nav-item"><a class="nav-link active" href="/services">Browse Services</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="#">Browse Products</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="/products">Browse Products</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                  <!--  <ul class="navbar-nav mr-auto">
-                        <!-- Authentication Links
+                    <ul class="navbar-nav mr-auto">
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -92,11 +94,9 @@
                                 </div>
                             </li>
                         @endguest
-                    </ul>-->
+                    </ul>
                 </div>
-            </div>
         </nav>
-
         <main>
             @yield('content')
         </main>
@@ -108,6 +108,9 @@
   
     <p class="copyright">AutoQuickFix © 2021</p>
 </footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ asset('js/jquery.min.js')}}"></script>
+<script src="{{ asset('js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('js/Multi-step-form.js')}}"></script>
+<script id="bs-live-reload" data-sseport="55081" data-lastchange="1634120436105" src="{{ asset('js/livereload.js')}}"></script>
+
 </html>
